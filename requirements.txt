@@ -1,0 +1,8 @@
+qiskit
+qiskit-ibm-runtime
+matplotlib
+numpy
+ipywidgets
+typer
+fastapi
+uvicorn[standard]

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ibm-bell"
+version = "0.1.0"
+description = "IBM Quantum Bell inequality (CHSH) experiment package"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name = "Anton", email = "anton@example.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "keyring",
+    "seaborn",
+    "qiskit",
+    "qiskit-ibm-runtime",
+    "matplotlib",
+    "numpy",
+    "ipywidgets",
+    "typer",
+    "fastapi",
+    "uvicorn[standard]",
+]
+
+[project.scripts]
+ibm-bell-run = "cli.main:app"
+ibm-bell-cred = "ibm_bell.cli.cred:main"
+ibm-bell-cred-set = "ibm_bell.cli.cred_set:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*", "docs*", "examples*"]
