@@ -2,6 +2,7 @@ import subprocess
 import sys
 from typing import List
 
+
 def install(packages: List[str]):
     """Idempotent installer used in notebooks and package import time.
     Installs missing packages via pip. Raises RuntimeError if installation fails.

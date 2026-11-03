@@ -6,8 +6,9 @@ secret in Windows Credential Manager. The token is never printed to stdout
 or written to a file.
 """
 
-import keyring
 from typing import Optional
+
+import keyring
 
 SERVICE_NAME = "IBM_QUANTUM"
 ACCOUNT_NAME = "token"

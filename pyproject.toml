@@ -37,3 +37,17 @@ ibm-bell-cred-set = "ibm_bell.cli.cred_set:main"
 [tool.setuptools.packages.find]
 where = ["."]
 exclude = ["tests*", "docs*", "examples*"]
+
+[tool.ruff]
+line-length = 100
+target-version = 'py310'
+
+[tool.ruff.lint]
+select = ['E', 'F', 'W', 'I']
+ignore = ['E501']
+
+[tool.mypy]
+python_version = '3.12'
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

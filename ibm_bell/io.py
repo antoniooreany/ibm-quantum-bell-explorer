@@ -9,7 +9,9 @@ import json
 from datetime import datetime
 from pathlib import Path
 from typing import Literal
+
 import numpy as np
+
 
 def resolve_timestamped_path(path: Path | str) -> Path:
     """Append a current ISO/compact timestamp to the file name.

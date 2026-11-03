@@ -1,8 +1,12 @@
 qiskit
 qiskit-ibm-runtime
 matplotlib
+seaborn
 numpy
 ipywidgets
 typer
 fastapi
 uvicorn[standard]
+httpx
+httpx2
+

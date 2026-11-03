@@ -5,9 +5,11 @@ stores it via :func:`ibm_bell.cred_manager.store_token`.  No token is echoed to
 stdout or written to any file.
 """
 
-import sys
 import getpass
-from ibm_bell.cred_manager import store_token, retrieve_token
+import sys
+
+from ibm_bell.cred_manager import retrieve_token, store_token
+
 
 def main() -> None:
     """Store the IBM Quantum token if not already present.

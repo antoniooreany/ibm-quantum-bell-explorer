@@ -5,6 +5,7 @@ If no token is found, it advises the user to set the environment variable
 `IBM_QUANTUM_TOKEN` or use a custom script to store it. (We keep it minimal to avoid prompting when the token already exists.)
 """
 import sys
+
 from ibm_bell.cred_manager import retrieve_token
 
 

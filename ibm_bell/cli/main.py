@@ -3,9 +3,10 @@
 Provides a Typer app that runs the CHSH parameter sweep.
 """
 
-import os
-import typer
 from pathlib import Path
+
+import typer
+
 from ibm_bell import experiment, io
 
 app = typer.Typer(add_completion=False)

@@ -1,0 +1,26 @@
+site_name: IBM Quantum Bell Explorer
+site_description: Interactive Bell CHSH Quantum Experiment on IBM Quantum Hardware and Simulators
+site_author: Anton
+repo_url: https://github.com/antoniooreany/ibm-quantum-bell-explorer
+repo_name: antoniooreany/ibm-quantum-bell-explorer
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+
+nav:
+  - Введение: index.md
+  - Теория неравенства Белла: theory.md
+  - Интерактивный UI: ui.md
+  - Руководство по CLI: cli.md
+  - Разработка и CI/CD: contributing.md
+
+plugins:
+  - search

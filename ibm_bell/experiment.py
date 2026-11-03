@@ -7,14 +7,15 @@ Provides:
 """
 from __future__ import annotations
 
+from collections.abc import Sequence
 from dataclasses import dataclass
-from typing import Sequence, List, Optional
+from typing import List, Optional
+
 import numpy as np
 
-from .service import get_service
-from .circuits import create_chsh_circuit
 from .analysis import compute_expectation
-from .visualization import plot_heatmap, plot_counts
+from .circuits import create_chsh_circuit
+from .service import get_service
 
 # Placeholder imports for mitigation – actual implementations would use Qiskit Ignis or Mitigation classes.
 # from qiskit_ignis.mitigation import CompleteMeasFitter, ZeroNoiseExtrapolation

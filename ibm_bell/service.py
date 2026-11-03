@@ -23,6 +23,7 @@ except Exception:
 # Import the runtime service from Qiskit IBM Runtime package
 from qiskit_ibm_runtime import QiskitRuntimeService
 
+
 def get_service() -> QiskitRuntimeService:
     """Return an authenticated ``QiskitRuntimeService``.
 

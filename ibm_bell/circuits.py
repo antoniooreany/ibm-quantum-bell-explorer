@@ -1,5 +1,5 @@
-import numpy as np
 from qiskit import QuantumCircuit
+
 
 def create_chsh_circuit(theta_a: float, theta_b: float) -> QuantumCircuit:
     """Generate the standard CHSH circuit for the given measurement angles.

@@ -3,8 +3,10 @@
 Provides a single entry point `ibm-bell-run` that can execute a parameter sweep
 with optional noise‑mitigation and tomography.
 """
-import typer
 from pathlib import Path
+
+import typer
+
 from ibm_bell import experiment, io
 
 app = typer.Typer(add_completion=False)

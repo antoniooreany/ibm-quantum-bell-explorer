@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from qiskit.visualization import plot_histogram
 
+
 def plot_heatmap(grid, angles_a, angles_b):
     """Heatmap of CHSH expectation values.
     grid: 2‑D numpy array shape (len(angles_a), len(angles_b))
