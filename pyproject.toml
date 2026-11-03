@@ -30,6 +30,7 @@ dependencies = [
 
 [project.scripts]
 ibm-bell-run = "cli.main:app"
+ibm-bell-web = "web.app:main"
 ibm-bell-cred = "ibm_bell.cli.cred:main"
 ibm-bell-cred-set = "ibm_bell.cli.cred_set:main"
 
